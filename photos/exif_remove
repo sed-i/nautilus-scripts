@@ -7,3 +7,5 @@ for filename in "$@"; do
     exiftool -all= "$filename" -overwrite_original
 done
 
+# TODO: consider GExiv2.Metadata.clear
+# https://lazka.github.io/pgi-docs/#GExiv2-0.10/classes/Metadata.html#GExiv2.Metadata.clear
