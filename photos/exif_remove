@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This script depends on exiftool
+# sudo apt install libimage-exiftool-perl
+
+for filename in "$@"; do
+    exiftool -all= "$filename" -overwrite_original
+done
+
